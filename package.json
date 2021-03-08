@@ -1,0 +1,19 @@
+{
+  "name": "tiktok-rss",
+  "version": "1.0.0",
+  "description": "Generate an RSS feed for TikTok users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tiktok",
+    "rss"
+  ],
+  "author": "Conor O'Neill",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "rss": "^1.2.2",
+    "tiktok-scraper": "^1.4.14"
+  }
+}

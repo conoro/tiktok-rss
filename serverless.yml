@@ -1,0 +1,24 @@
+service: tiktok-rss
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  timeout: 25
+  lambdaHashingVersion: 20201221
+  apiGateway:
+    shouldStartNameWithService: true
+functions:
+  check:
+    handler: index.check
+    events:
+      - http:
+          path: rss
+          method: get
+          cors: true
+          integration: lambda
+          response:
+            headers:
+              Content-Type: "'text/xml'"
+            template: $input.path('$')
