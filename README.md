@@ -1,5 +1,7 @@
 # TikTok-RSS
 
+NOTE Aug 2023: This doesn't work. Try https://github.com/conoro/tiktok-rss-flat instead.
+
 A Serverless Lambda function in Node.js to generate a proper RSS feed for any user on TikTok. 
 
 ## Installation
